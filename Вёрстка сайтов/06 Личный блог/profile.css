@@ -1,0 +1,37 @@
+.profile-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 120px;
+}
+
+.profile-form {
+    flex-grow: 1;
+}
+
+.profile-form input {
+    margin-bottom: 18px;
+}
+
+.profile-form input:last-of-type {
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.profile-avatar img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-avatar a {
+    font-size: 0.9rem;
+    color: #4c75c4;
+}

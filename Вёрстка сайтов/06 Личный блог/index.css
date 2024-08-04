@@ -1,0 +1,100 @@
+/* Shorts */
+
+.shorts-section {
+    margin-bottom: 30px;
+}
+
+.shorts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px,1fr));
+    gap: 25px;
+}
+
+.shorts-item {
+    position: relative;
+}
+
+.shorts-item img {
+    border-radius: 7px;
+}
+
+.shorts-item h5,
+.shorts-item p {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 3px #222, -1px -1px 3px #222, -1px 1px 3px #222, 1px -1px 3px #222;
+}
+
+.shorts-item h5 {
+    top: 14px;
+    left: 13px;
+}
+
+.shorts-item p {
+    right: 13px;
+    bottom: 14px;
+}
+
+/* Написать пост */
+
+.write-post {
+    display: flex;
+    column-gap: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--bg-color-darker);
+    box-shadow: 5px 0px 15px 0px rgba(5, 5, 5, 0.10);
+    margin-bottom: 30px;
+}
+
+.write-post input {
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    padding: 14px;
+    background-color: var(--bg-color-darker);
+    color: var(--text-color-secondary);
+}
+
+.write-post input:focus {
+    outline: none;
+}
+
+.write-post img {
+    width: 36px;
+    cursor: pointer;
+}
+
+/* Посты */
+
+.block-item > img {
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+/* Пагинация */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 120px;
+}
+
+.pagination a {
+    color: white;
+    padding: 12px 16px;
+    background-color: #777;
+    border-radius: 3px;
+}
+
+.pagination a:hover {
+    background-color: #666;
+}
+
+.pagination a:nth-child(3) {
+    background-color: #3137c9;
+}
