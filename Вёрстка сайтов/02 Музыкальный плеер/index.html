@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player - Открой музыку</title>
+    <script>
+        function openMenu() {
+            let x = document.getElementById("header-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-line">
+            <div class="logo-mobile-menu">
+                <img class="logo" src="img/logo.png" alt="Логотип">
+                <button class="btn-menu-mobile" onclick="openMenu()">
+                    <img src="img/icons/icon-burger-menu.svg" alt="Мобильное меню">
+                </button>
+            </div>
+            <nav id="header-menu">
+                <a href="/">Главная</a>
+                <a href="#listen">Слушать</a>
+                <a href="#about">О плеере</a>
+                <a href="#download">Загрузить</a>
+            </nav>
+            <form action="" method="GET">
+                <input class="header-search" type="text" placeholder="Поиск трека">
+            </form>
+        </div>
+
+        <div class="header-banner">
+            <div class="header-banner__text">
+                <h1>Music Player</h1>
+                <p>Открой музыку для себя заново</p>
+                <button class="btn btn-primary">Загрузить</button>
+            </div>
+            <img class="header-banner__img" src="img/player-interface-01.png" alt="Интерфейс плеера">
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="listen-section section" id="listen">
+        <div class="container">
+            <h2 class="section-title">Слушать онлайн</h2>
+            <div class="player-online">
+                <div class="player">
+                    <h3>Depeche Mode</h3>
+                    <h4>Before We Drown</h4>
+                    <p>Memento Mori (2023)</p>
+                    <div class="player-controls">
+                        <button class="btn-primary"><img src="img/icons/icon-prev.svg" alt="Предыдущий трек"></button>
+                        <button class="btn-primary"><img src="img/icons/icon-play.svg" alt="Play"></button>
+                        <button class="btn-primary"><img src="img/icons/icon-next.svg" alt="Следующий трек"></button>
+                    </div>
+                    <div class="player-search">
+                        <button class="btn btn-primary">Поиск трека</button>
+                        <button class="btn btn-secondary">Похожие исполнители</button>
+                    </div>
+                </div>
+                <img class="player-cover" src="img/album-cover.jpg" alt="Depeche Mode - Memento Mori">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section section" id="about">
+        <div class="container">
+            <h2 class="section-title">О плеере</h2>
+            <div class="about">
+                <p><strong>Music Player</strong> - это программа, предназначенная для воспроизведения аудиофайлов практически любого из известных формата. Она предлагает возможность организовать и управлять коллекцией музыки, создавая удобное и персонализированное музыкальное воспроизведение.</p>
+                <p><strong>Главные функции программы:</strong></p>
+                <ul>
+                    <li><p><strong>Воспроизведение музыки</strong></p><p>Возможность проигрывать музыкальные файлы различных форматов, включая MP3, WAV, FLAC и другие.</p></li>
+                    <li><p><strong>Поиск и добавление музыки:</strong></p><p>Плеер позволяет легко находить и добавлять новые треки в библиотеку с помощью функции поиска и импорта.</p></li>
+                    <li><p><strong>Создание плейлистов:</strong></p><p>Пользователь может создавать персональные плейлисты для разных настроений или событий, группируя музыку по категориям.</p></li>
+                    <li><p><strong>Эквалайзер и аудиоэффекты:</strong></p><p>Плеер имеет встроенные настройки эквалайзера и предлагать различные аудиоэффекты для оптимизации звука.</p></li>
+                    <li><p><strong>Синхронизация с устройствами:</strong></p><p>Возможность синхронизации музыкальной библиотеки с мобильными устройствами, позволяя слушать музыку везде, где есть доступ к программе.</p></li>
+                    <li><p><strong>Поддержка кросс-платформы:</strong></p><p>Доступно для различных операционных систем: Windows, MacOS, iOS и Android.</p></li>
+                </ul>
+                <p><strong>Music Player</strong> - это интуитивно понятная и удобная программа, которая позволяет наслаждаться музыкой в настраиваемом и удобном формате. Он станет незаменимым инструментом для всех меломанов и просто любителей музыки.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section section" id="download">
+        <div class="container">
+            <h2 class="section-title">Загрузить</h2>
+            <div class="download">
+                <div class="download-info">
+                    <div class="download-links">
+                        <button class="btn btn-primary">Скачать для Windows</button>
+                        <button class="btn btn-secondary">Скачать для MacOS</button>
+                        <div class="download-mobile">
+                            <button class="btn btn-mobile"><img src="img/icons/icon-apple.svg" alt="Ссылка для iOS">Apple Store</button>
+                            <button class="btn btn-mobile"><img src="img/icons/icon-android.svg" alt="Ссылка для Android">Google Play</button>
+                        </div>
+                    </div>
+                    <div class="download-older-ver">
+                        <h3>Нужна предыдущая версия MPlayer?</h3>
+                        <p>Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией операционной системы и определёнными устройствами.</p>
+                        <a href="#">Выберите предыдущую версию MPlayer</a>
+                    </div>
+                </div>
+                <img src="img/laptop.png" alt="Десктоп-версия программы">
+            </div>
+        </div>
+    </section>
+
+    <footer class="section">
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <div class="footer-col">
+                    <h3>MPlayer Store</h3>
+                    <a href="#">Варианты оплаты</a>
+                    <a href="#">Состояние заказа</a>
+                    <a href="#">Помощь при покупке</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Ценности MPlayer</h3>
+                    <a href="#">Универсальный доступ</a>
+                    <a href="#">Окружающая среда</a>
+                    <a href="#">Конфиденциальность</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Учётная запись</h3>
+                    <a href="#">Управление вашим MPlayer ID</a>
+                    <a href="#">Учётная запись MPlayer Store</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© MPlayer Inc., 2023 г. Все права защищены.</p>
+                <a href="#">Условия использования</a>
+                <a href="#">Продажа и возврат</a>
+                <a href="#">Юридическая информация</a>
+            </div>
+        </div>
+    </footer>
+</main>
+ 
+</body>
+</html>
