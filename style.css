@@ -1,0 +1,176 @@
+/* Сброс стилей */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+/* Универсальные стили */
+
+:root {
+  --bg-main-color: white;
+  --bg-second-color: #333;
+  --text-main-color: #333;
+  --text-second-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--bg-main-color);
+  color: var(--text-main-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p, li {
+  margin: 10px 0;
+  line-height: 24px;
+}
+
+.block-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Кастомные стили */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-main {
+  text-decoration: none;
+  padding: 12px 18px;
+  transition: all .3s;
+}
+
+.btn-main:hover {
+  filter: opacity(85%);
+  padding: 12px 40px;
+}
+
+.btn-colored {
+  background-color: #C44046;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: #C44046;
+  font-weight: 500;
+}
+
+/* Header */
+
+header {
+  background: url('bg-image-dark.jpg') no-repeat fixed center center / cover;;
+  color: var(--text-second-color);
+  height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  max-width: 1020px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+header h3 {
+  margin: 32px 0 24px;
+}
+
+.header-text {
+  margin-bottom: 56px;
+}
+
+header ul {
+  list-style-position: inside;
+}
+
+header li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 0 12px;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Portfolio */
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item {
+  margin: 15px;
+}
+
+.portfolio-item > img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 350px;
+  width: 100%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 6s;
+}
+
+.portfolio-item > img:hover {
+  object-position: center bottom;
+}
+
+.portfolio-item h4 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.portfolio-item a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.left-border {
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px 15px;
+}
