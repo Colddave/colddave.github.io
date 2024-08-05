@@ -1,0 +1,293 @@
+/* Сброс стилей */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: 'Play', sans-serif;
+  max-width: 1440px;
+  border-radius: 50px;
+  margin: 60px auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: 'Play', sans-serif;
+  font-size: 1rem;
+}
+
+html {
+  background-color: #1e1e1e;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 130%;
+}
+
+/* Универсальные стили */
+
+:root {
+  --color-secondary: #FC712D;
+}
+
+.container {
+  padding: 0 80px;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+/* Header */
+
+header {
+  border-bottom: 4px double #D3D3D3;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  width: 60%;
+  height: 140px;
+}
+
+.navigation > a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navigation > a:hover {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.logo {
+  width: 80px;
+}
+
+/* Banner */
+
+.banner {
+  max-width: 720px;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.banner h3 {
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.banner__text p {
+  margin-bottom: 10px;
+}
+
+.banner__text p::first-letter {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.banner > p {
+  margin-bottom: 10px;
+}
+
+.price-wrap {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  column-gap: 49px;
+  margin-bottom: 123px;
+}
+
+.price-wrap > p {
+  font-size: 3.2rem;
+}
+
+.price-wrap > button {
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 50px; 
+  padding: 16px 35px;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.price-wrap > button:hover {
+  filter: saturate(85%);
+}
+
+.price-wrap > button:active {
+  transform: translate(2px, 2px);
+}
+
+.shoes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 42px;
+}
+
+.shoes-item {
+  background-color: #E4E4E4;
+  border-radius: 30px; 
+  padding: 120px 20px 20px 20px;
+  position: relative;
+}
+
+.shoes-item__img {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-30deg);
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 4px;
+}
+
+.name-price > h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.rating img {
+  width: 18px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+  background-color: #292929;;
+  border-radius: 10px;
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+}
+
+.add-to-cart:active {
+  transform: scale(0.9);
+}
+
+/* Большие элементы баннера */
+
+.just-do-it {
+  position: absolute;
+  top: 50%;
+  left: 880px;
+  transform: translateY(-50%);
+  font-size: 17rem;
+  line-height: 110%;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px var(--color-secondary);
+  opacity: 0.4;
+}
+
+.big-shoe {
+  position: absolute;
+  top: 50%;
+  left: 880px;
+  transform: translateY(-50%);
+  height: 80%;
+}
+
+/* Адаптивная вёрстка */
+
+@media screen and (max-width:880px) {
+  .navigation {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+  }
+
+  .navigation > * {
+      margin: 25px 0;
+  }
+
+  .logo {
+      width: 140px;
+  }
+  
+  .navigation > a {
+      font-size: 1.8rem;
+  }
+
+  .banner {
+      max-width: 100%;
+  }
+
+  .banner__text p {
+      font-size: 1.4rem;
+  }
+  
+  .price-wrap > button {
+      font-size: 1.6rem;
+  }
+
+  .shoes-list {
+      grid-template-columns: 1fr;
+  }
+
+  .shoes-item__img {
+      top: -60px;
+      max-width: 70%;
+  }
+
+  .name-price > h5 {
+      font-size: 1.6rem;
+  }
+
+  .name-price > p {
+      font-size: 1.8rem;
+  }
+
+  .rating img {
+      width: 22px;
+      height: 22px;
+  }
+
+  .add-to-cart {
+      width: 70px;
+      height: 70px;
+      right: -25px;
+      bottom: -25px;
+  }
+
+  .just-do-it {
+      display: none;
+  }
+
+  .big-shoe {
+      display: none;
+  }
+}

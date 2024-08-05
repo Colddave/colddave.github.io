@@ -1,0 +1,49 @@
+.block-item {
+    display: flex;
+    column-gap: 25px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.block-item > * {
+    width: 50%;
+}
+
+.block-item img {
+    object-fit: cover;
+}
+
+.works-info {
+    padding: 25px 15px;
+}
+
+.block-text {
+    font-size: 0.95rem;
+}
+
+.works-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 60px;
+}
+
+.works-tags a {
+    background-color: #EA8C1E;
+    padding: 4px 9px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* Адаптивная вёрстка */
+
+@media screen and (max-width: 980px) {
+    .block-item {
+        flex-wrap: wrap;
+    }
+
+    .block-item > * {
+        width: 100%;
+    }
+}
