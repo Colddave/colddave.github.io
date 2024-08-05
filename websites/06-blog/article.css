@@ -1,0 +1,117 @@
+/*  */
+
+.block-line {
+    margin-bottom: 10px;
+}
+
+.block-line a {
+    color: rgba(0,0,0,0.5);
+}
+
+.block-line__share {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.block-meta {
+    margin-bottom: 10px;
+}
+
+.block-line img {
+    width: 20px;
+}
+
+.article__image {
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.article-interesting {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 25px 0;
+    margin-bottom: 30px;
+}
+
+.article-interesting h3 {
+    margin-bottom: 19px;
+}
+
+.article-interesting__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.article-interesting__link a {
+    display: block;
+    color: #5b5a97;
+    margin-bottom: 5px;
+}
+
+.article-interesting__link p {
+    color: var(--text-color-primary);
+    font-size: 15px;
+}
+
+.commentary-write {
+    margin-bottom: 50px;
+}
+
+.commentary-write h3 {
+    margin-bottom: 18px;
+}
+
+.commentary-write input {
+    margin-bottom: 18px;
+}
+
+.commentary-message {
+    margin-bottom: 24px;
+}
+
+.commentary-message--reply {
+    margin-left: 40px;
+}
+
+.commentary-info {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 14px;
+}
+
+.commentary-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.commentary-meta p:first-child {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.commentary-meta p:last-child {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.commentary-text {
+    margin-bottom: 5px;
+}
+
+.commentary-reply-link {
+    font-size: 15px;
+}
+
+/* Адаптивная в вёрстка */
+
+@media screen and (max-width: 980px) {
+    .article-interesting__links {
+        grid-template-columns: 1fr;
+    }
+}
